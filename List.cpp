@@ -91,5 +91,20 @@ void List::remove(int k)
 	num_elements--;
 	}
 	
-	//Implementations of missing operations
 	
+	// get
+	 int List::get(int k)
+	 {
+	  if (k <1 or k > num_elements)
+		{
+			cout << "Invalid Position! Returning zero: ";
+			return 0;
+		}
+		Node* iPtr = frontPtr;
+		for (int i = 1; i <k; i++)
+		{
+			iPtr= iPtr ->link;
+		}
+		return iPtr->data;
+	
+	 }

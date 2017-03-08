@@ -12,6 +12,7 @@ class Stack
 private:
 
    List data;
+   int num_elements=0;
 
 public:
 
@@ -23,7 +24,7 @@ public:
 
    int size();
 
-   void push(int);
+   void push(int val);
 
    void pop();
 
