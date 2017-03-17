@@ -7,14 +7,15 @@
 
 #include "List.h"
 
-class Stack
+class StackL
 {
-private:
-
+ private:
+  
    List data;
-   int num_elements=0;
+   
 
 public:
+
 
 // No default c'tor needs to be declared 
 // the List "knows" how to initialize itself
@@ -22,15 +23,14 @@ public:
 // No default d'tor needs to be declared 
 // the List "knows" how to destroy itself
 
-   int size();
+  
+    void clear();
 
-   void push(int val);
-
-   void pop();
-
-   int top();
-
-   void clear();
+     void push (int element);//insert element at location k
+     void pop();//remove element at location k
+     int size();//return the number of elements in the List
+     int top ();
+    
 
 };
 

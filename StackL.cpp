@@ -1,46 +1,33 @@
 #include "StackL.h"
+
 #include <iostream>
 using namespace std;
 
 
-Class StackL::Node
-{
-	public:
-	int data;
-	Node* link;
-};
-void StackL::size(){
-data.size();
+int StackL::size(){
+ return data.size();
+
 }
 void StackL::pop ()
 {
-	Node*delPtr = frontPtr;
-	  
-	  frontPtr = frontPtr->link;
-	  delete delPtr;
+	data.remove(1);
 	}
 
  void StackL::push(auto val)
  {
- 
-Node*newPrt= new Node {val}
-newPtr->link=frontPtr;
-frontPtr=newPtr;
-	
+  data.insert(val,1);
 }
- void StackL::top()
+ int StackL::top()
  {
 	  
-	  
-		Node* iPtr = frontPtr;
-		return iPtr->data;
+	 return data.get(1);
 	
 	 }
- }
  
- int StackL::clear(){
-	 {
-    while(num_elements > 0)
-      remove(1);
-}
+ 
+ void StackL::clear()
+ {
+	 
+  data.~List();
+
 	 }
